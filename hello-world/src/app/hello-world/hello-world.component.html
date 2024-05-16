@@ -1,0 +1,105 @@
+<!-- <h1>{{Title}}</h1>
+<h1>{{firstName}} {{lastName}}</h1>
+<h1 [innerHTML]="team"></h1>
+
+<h1><b>{{name}}</b></h1>
+<br>
+<input type="text" [(ngModel)]="name">
+<br>
+<i>{{getName()}}</i>
+
+<h1 [innerHTML]="checking"></h1>
+<button [disabled]="isDisabled">click me</button>
+<p [innerText]="'welcome to' + ' maranakinar'"></p>
+
+
+<p>you are clicked {{clickCounted}}</p>
+<p>copy of count = {{count}}</p>
+<button (click)="getCount(); count = clickCounted " >click me</button> -->
+
+<!-- type anything: <input type="text" (input)="handleInput($event); value1=$any($event.target).value">
+<p>with handleInput: {{value}}</p>
+<p>without handleInput: {{value1}}</p> -->
+
+
+
+<!-- array  -->
+
+
+<!-- <ul>
+    <li *ngFor = "let movie of movies">{{movie}}</li>
+</ul> -->
+
+
+<!-- object  -->
+
+
+<!-- <ul>
+    <li *ngFor="let movie of moviesWithDirectors">
+          {{movie.title}} - {{movie.director}}
+    </li>
+</ul> -->
+
+<!-- Table -->
+
+<!-- <div class="panel panel-primary">
+    <div class="panel-heading">
+        {{Title}}
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>sn.no</th>
+                    <th>Title</th>
+                    <th>Director</th>
+                </tr>
+                <tr *ngFor="let movie of moviesWithDirectors; let i = index">
+                    <td>{{i+1}}</td>
+                    <td>{{movie.title}}</td>
+                    <td>{{movie.director}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div> -->
+
+<!-- odd,even bg -->
+
+
+<!-- <div class="panel panel-primary">
+    <div class="panel-heading">
+        {{Title}}
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>sn.no</th>
+                    <th>Title</th>
+                    <th>Director</th>
+                </tr>
+                <tr [ngClass]="{ 'bg-warning': f ,'bg-info':l}"
+                *ngFor="let movie of moviesWithDirectors; let i = index; let o = odd; let e = even; let f = first; let l = last">
+            
+                    <td>{{i+1}}</td>
+                    <td>{{movie.title}}</td>
+                    <td>{{movie.director}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div> -->
+
+<input type="text" [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="'1'">one</div>
+    <div *ngSwitchCase="'2'">two</div>
+    <div *ngSwitchCase="'3'">three</div>
+    <div *ngSwitchDefault>this is defalut</div>
+</div>
+
+
+
+
+
