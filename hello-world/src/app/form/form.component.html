@@ -1,0 +1,9 @@
+<p>form component!</p>
+
+<label for="">CarName</label>
+<input type="text" name="" [(ngModel)]="carsName">
+<button (click)="addcar()">Submit</button>
+
+<br><br>
+
+<app-list [carnames]="cars"></app-list>
