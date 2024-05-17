@@ -91,15 +91,99 @@
     </div>
 </div> -->
 
-<input type="text" [(ngModel)]="num">
+<!-- <input type="text" [(ngModel)]="num">
 <div [ngSwitch]="num">
     <div *ngSwitchCase="'1'">one</div>
     <div *ngSwitchCase="'2'">two</div>
     <div *ngSwitchCase="'3'">three</div>
     <div *ngSwitchDefault>this is defalut</div>
+</div> -->
+
+<!-- <h1>ngif Example</h1> -->
+
+<!-- <div class="row">
+    <label for="">checkBox<input type="checkbox" [(ngModel)]="showme"></label>
+</div>
+<p *ngIf="showme">showme is checked</p>
+<p *ngIf="!showme">showme is unchecked</p> -->
+
+
+<!-- <div class="row">
+    <label for="">checkBox<input type="checkbox" [(ngModel)]="showme"></label>
+</div>
+<p *ngIf="showme; else elseBlock" >showme is checked</p>
+
+<ng-template #elseBlock>
+    <p>show me is unchecked</p>
+</ng-template> -->
+
+
+<!-- <div class="row">
+    <label for="">checkBox<input type="checkbox" [(ngModel)]="showme"></label>
 </div>
 
+<div *ngIf="showme; then thenBlock; else elseBlock "></div>
 
+<ng-template #thenBlock>
+    <p>showme is checked</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>show me is unchecked</p>
+</ng-template> -->
+
+
+
+<!-- ngclass -->
+
+<!-- <div [ngClass]="['primary','big']">
+    simple text
+</div> -->
+<!-- Big<input type="checkbox" [(ngModel)]="isbig">
+red<input type="checkbox" [(ngModel)]="isEmbeded" >
+<div [ngClass]="{
+    'primary':isEmbeded,
+    'big':isbig
+
+}" >
+    simple text
+</div> -->
+
+<!-- ng style -->
+<!-- 
+<div [ngStyle]="{'color': status === 'success' ? 'red' : 'blue'}">simple text</div> -->
+
+
+
+
+
+
+<!-- pipe -->
+<!-- date -->
+<!-- <p>unformated Date: {{toDate}}</p>
+<p>formated Date: {{toDate | date}}</p>
+<p>medium Date: {{toDate | date:'medium'}}</p>
+<p>short Date: {{toDate | date:'short'}}</p>
+<p>long Date: {{toDate | date:'longDate'}}</p>
+<p>fullDate: {{toDate | date:'fullDate'}}</p> -->
+
+<!-- lower and upper case -->
+<!-- 
+<p>orginal: {{message}}</p>
+<p>upper: {{message | uppercase}}</p>
+<p>lower: {{message | lowercase}}</p> -->
+
+<!-- slice -->
+
+<!-- <p>example1:{{message | slice:11:18}}</p>
+<p>example2:{{message | slice:-7}}</p>
+<p>examole3:{{message|slice:0:7}}</p> -->
+
+<!-- currency -->
+
+<p>price without formating  {{price}}</p>
+<p>price with formating  {{price|currency:"INR"}}</p>
+<p>Price without logo formatting: {{ price | currency: 'INR' : false }}</p>
 
 
 

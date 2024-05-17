@@ -1,4 +1,6 @@
-h1{
+.primary{
     color: red;
-    font-weight: bolder;
+}
+.big{
+    font-size: xx-large;
 }

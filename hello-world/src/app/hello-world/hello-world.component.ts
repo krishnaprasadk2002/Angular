@@ -54,6 +54,19 @@ export class HelloWorldComponent {
 //     { title: "Final Destination", director: "James Wong" }
 //   ];
 
-num = 0;
+// num = 0;
 
+// isEmbeded = true
+// isbig = true
+
+// status:string = "error"
+
+
+//pipe
+
+// toDate = new Date()
+
+// message = "Welcome To Angular"
+
+price = 125
 }
