@@ -1,3 +1,5 @@
+<app-form (carAdded)="carsDataUpdated($event)"></app-form>
+
 <p>list component!</p>
 
 <div *ngIf="car.length > 0; then carData; else carEmpty"></div> 

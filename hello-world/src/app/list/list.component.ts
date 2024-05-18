@@ -10,6 +10,12 @@ import { FormComponent } from '../form/form.component';
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })
+// export class ListComponent {
+//    @Input('carnames') car:string[] =[]
+// }
 export class ListComponent {
-   @Input('carnames') car:string[] =[]
+ car:string[] =[]
+ carsDataUpdated(carData:string[]){
+  this.car = carData
+ }
 }
